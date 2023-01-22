@@ -238,7 +238,7 @@ hr {
   height: 40%;
 }
 .menu-navig-item__title {
-  color: #909090;
+  color: #7a7a7a;
   flex: 1;
   font-size: 14px;
   font-weight: 500;
@@ -430,7 +430,7 @@ hr {
   }
 }
 .item-cats__title {
-  color: #585858;
+  color: #7a7a7a;
   font-size: 14px;
   font-weight: 500;
   transition: 0.5s;
@@ -476,7 +476,7 @@ hr {
   width: 136px;
 }
 .menu-item_selected .body-item {
-  background-color: #f2eeee;
+  background-color: #f3f3f3;
 }
 .menu-item_selected .buy-item-btn {
   background-image: url(../assets/icons/check.png);
@@ -508,7 +508,7 @@ hr {
   padding-bottom: 8px;
 }
 .body-item__text {
-  color: #898686;
+  color: #7a7a7a;
   font-size: 13px;
   font-weight: 600;
   padding-bottom: 10px;
@@ -626,16 +626,16 @@ hr {
   justify-content: center;
   width: 60px;
 }
-.short-article-img_yellow {
+.short-article-img_one {
   background-color: #fff0a5;
 }
-.short-article-img_blue {
+.short-article-img_two {
   background-color: #d6f5ff;
 }
-.short-article-img_pink {
+.short-article-img_three {
   background-color: #ffddf0;
 }
-.short-article-img_green {
+.short-article-img_four {
   background-color: #c1fff4;
 }
 .short-article-img__img {

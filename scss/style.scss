@@ -1,8 +1,9 @@
 @import "nullstyle";
+@import "colors";
 
 body {
-  background-color: #eaf1fe;
-  color: #000;
+  background-color: $bg-neutral;
+  color: $font-primary;
   font-family: 'Inter', sans-serif;
 }
 
@@ -19,7 +20,7 @@ hr {
 /* Common */
 
 .action-btn {
-  background-color: #f3f3f3;
+  background-color: $neutral-light;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -30,7 +31,7 @@ hr {
   transition: .5s;
 
   &:hover {
-    background-color: #ab97f3;
+    background-color: $primary;
   }
 }
 
@@ -45,7 +46,7 @@ hr {
   }
 
   &__btn {
-    background-color: #fff;
+    background-color: $neutral;
     background-image: url(../assets/icons/filters.png);
     background-position: center;
     background-size: 100%;
@@ -93,7 +94,7 @@ hr {
   }
 
   &-small {
-    background-color: #f3f3f3 !important;
+    background-color: $neutral-light !important;
   }
 
   &-logo {
@@ -125,7 +126,7 @@ hr {
   margin: 40px 0;
 
   &-img {
-    background-color: #fff;
+    background-color: $neutral;
     border-radius: 15px;
     padding: 8px;
     width: 80px;
@@ -156,7 +157,7 @@ hr {
 
     &-icon {
       align-items: center;
-      background-color: #fff;
+      background-color: $neutral;
       border-radius: 15px;
       display: flex;
       height: 44px;
@@ -169,7 +170,7 @@ hr {
     }
 
     &__title {
-      color: #909090;
+      color: $font-secondary;
       flex: 1;
       font-size: 14px;
       font-weight: 500;
@@ -178,33 +179,33 @@ hr {
     }
 
     &_active {
-      background-color: #ff5454;
+      background-color: $secondary;
 
       & .menu-navig-item-icon {
-        background-color: #df4545;
+        background-color: $secondary-dark;
       }
 
       & .menu-navig-item__title {
-        color: #fff
+        color: $neutral;
       }
 
       &:hover {
-        background-color: #ff5454;
+        background-color: $secondary;
       }
     }
 
     &:hover {
-      background-color: #ab97f3;
+      background-color: $primary;
 
       .menu-navig-item__title {
-        color: #fff;
+        color: $neutral;
       }
     }
   }
 }
 
 .navig-extra {
-  background-color: #fff;
+  background-color: $neutral;
   border-radius: 25px;
   cursor: pointer;
   margin-top: 130px;
@@ -249,7 +250,7 @@ hr {
 /* Content */
 
 .content {
-  background-color: #fff;
+  background-color: $neutral;
   border-radius: 35px;
   column-gap: 72px;
   display: flex;
@@ -335,7 +336,7 @@ hr {
 
 .item-cats {
   align-items: center;
-  background-color: #f3f3f3;
+  background-color: $neutral-light;
   border-radius: 60px;
   display: flex;
   flex-direction: column;
@@ -353,15 +354,15 @@ hr {
   }
 
   &_selected {
-    background-color: #fff;
-    box-shadow: 0px 4px 46px #0000001a;
+    background-color: $neutral;
+    box-shadow: 0px 4px 46px $shadow-neutral;
 
     @media screen and (max-width: 685px) {
-      border: 1px solid #000;
+      border: 1px solid $border-primary;
     }
 
     & .item-cats__title {
-      color: #000;
+      color: $font-primary;
       font-size: 18px;
     }
   }
@@ -376,22 +377,22 @@ hr {
   }
 
   &__title {
-    color: #585858;
+    color: $font-secondary;
     font-size: 14px;
     font-weight: 500;
     transition: .5s;
   }
 
   &_unselected:hover {
-    background-color: #ab97f3;
-    box-shadow: 0px 4px 46px #0000001a;
+    background-color: $primary;
+    box-shadow: 0px 4px 46px $shadow-neutral;
 
     & .item-cats__img {
       transform: scale(1.2);
     }
 
     & .item-cats__title {
-      color: #fff;
+      color: $neutral;
     }
   }
 }
@@ -430,7 +431,7 @@ hr {
 
     &_selected {
       & .body-item {
-        background-color: #f2eeee;
+        background-color: $neutral-light;
       }
 
       & .buy-item-btn {
@@ -449,7 +450,7 @@ hr {
       }
 
       & .body-item {
-        box-shadow: 0px 4px 46px #0000001a;
+        box-shadow: 0px 4px 46px $shadow-neutral;
       }
     }
 
@@ -461,7 +462,7 @@ hr {
 }
 
 .body-item {
-  border: 2px solid #f2eeee;
+  border: 2px solid $border-neutral;
   border-radius: 30px;
   padding: 56px 28px 12px;
   transition: .5s;
@@ -473,7 +474,7 @@ hr {
   }
 
   &__text {
-    color: #898686;
+    color: $font-secondary;
     font-size: 13px;
     font-weight: 600;
     padding-bottom: 10px;
@@ -519,7 +520,7 @@ hr {
     text-align: right;
 
     &__btn {
-      background-color: #666;
+      background-color: $neutral-dark;
       background-image: url(../assets/icons/basket.png);
       position: relative;
     }
@@ -548,18 +549,18 @@ hr {
   }
 
   &-body {
-    background-color: #ab97f3;
+    background-color: $primary;
     border-radius: 30px;
     padding: 77px 22px 31px;
 
     &__title {
-      color: #fff;
+      color: $neutral;
       font-size: 24px;
       font-weight: 700;
     }
 
     &__text {
-      color: #fff;
+      color: $neutral;
       font-size: 14px;
       font-weight: 600;
     }
@@ -610,20 +611,20 @@ hr {
     justify-content: center;
     width: 60px;
 
-    &_yellow {
-      background-color: #fff0a5;
+    &_one {
+      background-color: $bg-primary-one;
     }
 
-    &_blue {
-      background-color: #d6f5ff;
+    &_two {
+      background-color: $bg-primary-two;
     }
 
-    &_pink {
-      background-color: #ffddf0;
+    &_three {
+      background-color: $bg-primary-three;
     }
 
-    &_green {
-      background-color: #c1fff4;
+    &_four {
+      background-color: $bg-primary-four;
     }
 
     &__img {
@@ -652,7 +653,7 @@ hr {
 .article {
   &-likes {
     align-items: center;
-    background-color: #fff8d5;
+    background-color: $bg-secondary;
     border-radius: 15px;
     column-gap: 6px;
     display: flex;
