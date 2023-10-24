@@ -85,6 +85,8 @@ h6 {
   font-weight: inherit;
 }
 
+/* Colors */
+/* Font-weight */
 body {
   background-color: #eaf1fe;
   color: #000;
@@ -154,13 +156,11 @@ hr {
   flex: 1;
   flex-direction: column;
   height: 100vh;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
 
 .header-small {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -246,7 +246,7 @@ hr {
   transition: 0.5s;
 }
 .menu-navig-item_active {
-  background-color: #ff5454;
+  background-color: #fff8d5;
 }
 .menu-navig-item_active .menu-navig-item-icon {
   background-color: #df4545;
@@ -255,7 +255,7 @@ hr {
   color: #fff;
 }
 .menu-navig-item_active:hover {
-  background-color: #ff5454;
+  background-color: #fff8d5;
 }
 .menu-navig-item:hover {
   background-color: #ab97f3;
@@ -340,7 +340,7 @@ hr {
   justify-content: space-between;
 }
 .shop-title__title {
-  --fz: calc((100vw - 320px)/(1440 - 320) * (48 - 30) + 30px);
+  --fz: calc((100vw - 320px) / (1440 - 320) * (48 - 30) + 30px);
   font-size: var(--fz);
   font-weight: 800;
   line-height: 65px;
